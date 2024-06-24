@@ -36,7 +36,8 @@ class pet {
     this.breed = _breed;
   }
 }
-let listaDiAnimaliFinale = {};
+
+const listaDiAnimaliFinale = [];
 
 const buttonElement = document.querySelector("form");
 buttonElement.onsubmit = function (event) {
@@ -51,20 +52,14 @@ buttonElement.onsubmit = function (event) {
   const breedElement = document.getElementById("Breed");
   console.log(breedElement.value);
 
-  const animale = new pet(
+  let animale = new pet(
     nameElement.value,
     ownerNameElement.value,
     speciesElement.value,
     breedElement.value
   );
-  listaDiAnimali = {
-    name: nameElement.value,
-    ownerName: ownerNameElement.value,
-    species: speciesElement.value,
-    breed: breedElement.value,
-  };
-  listaDiAnimaliFinale = {
-    ...listaDiAnimali,
-  };
+  listaDiAnimaliFinale.push(pet);
+
+  console.log(listaDiAnimaliFinale);
+  renderList();
 };
-console.log(listaDiAnimaliFinale);
