@@ -61,5 +61,4 @@ buttonElement.onsubmit = function (event) {
   listaDiAnimaliFinale.push(pet);
 
   console.log(listaDiAnimaliFinale);
-  renderList();
 };
