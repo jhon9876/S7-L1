@@ -58,7 +58,7 @@ buttonElement.onsubmit = function (event) {
     speciesElement.value,
     breedElement.value
   );
-  listaDiAnimaliFinale.push(pet);
+  listaDiAnimaliFinale.push(animale);
 
   console.log(listaDiAnimaliFinale);
 };
